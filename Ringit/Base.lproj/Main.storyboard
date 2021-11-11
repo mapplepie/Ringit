@@ -1,24 +1,173 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Ringit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Tte-F7-UV3">
+                                <rect key="frame" x="10" y="24" width="394" height="795.5"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uXb-Kr-jy3">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="232"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgonline-com-ua-resize-ja4JFvoC3r6Ara6" translatesAutoresizingMaskIntoConstraints="NO" id="MZC-mL-Ksn">
+                                                <rect key="frame" x="26.5" y="32.5" width="341" height="167"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PnW-Dh-2U5">
+                                                <rect key="frame" x="71.5" y="80" width="251.5" height="72.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="DO-RE-MI">
+                                                    <fontDescription key="titleFontDescription" name="PartyLetPlain" family="Party LET" pointSize="50"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bGL-q9-2wC"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="MZC-mL-Ksn" firstAttribute="centerX" secondItem="uXb-Kr-jy3" secondAttribute="centerX" id="9Ds-ss-0sk"/>
+                                            <constraint firstItem="MZC-mL-Ksn" firstAttribute="centerY" secondItem="uXb-Kr-jy3" secondAttribute="centerY" id="Jnc-OE-uxN"/>
+                                            <constraint firstItem="PnW-Dh-2U5" firstAttribute="centerX" secondItem="uXb-Kr-jy3" secondAttribute="centerX" id="KS4-ce-cv9"/>
+                                            <constraint firstItem="PnW-Dh-2U5" firstAttribute="centerY" secondItem="uXb-Kr-jy3" secondAttribute="centerY" id="xkH-q8-dHh"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="TK9-f9-cYf">
+                                        <rect key="frame" x="0.0" y="240" width="394" height="555.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iy8-Iq-lvx">
+                                                <rect key="frame" x="0.0" y="0.0" width="394" height="72.5"/>
+                                                <color key="backgroundColor" systemColor="systemBrownColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="DO">
+                                                    <fontDescription key="titleFontDescription" name="PartyLetPlain" family="Party LET" pointSize="50"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sWS-Wv-NwY"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IrO-ID-YNA">
+                                                <rect key="frame" x="0.0" y="80.5" width="394" height="72.5"/>
+                                                <color key="backgroundColor" red="0.84705882352941175" green="0.71372549019607845" blue="0.64313725490196072" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="RE">
+                                                    <fontDescription key="titleFontDescription" name="PartyLetPlain" family="Party LET" pointSize="50"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="spl-Dr-cEC"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U4V-NR-6Hx">
+                                                <rect key="frame" x="0.0" y="161" width="394" height="72.5"/>
+                                                <color key="backgroundColor" red="0.93333333333333335" green="0.92156862745098034" blue="0.8666666666666667" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="MI">
+                                                    <fontDescription key="titleFontDescription" name="PartyLetPlain" family="Party LET" pointSize="50"/>
+                                                    <color key="baseForegroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NNU-8J-24L"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vQC-h8-zvg">
+                                                <rect key="frame" x="0.0" y="241.5" width="394" height="72.5"/>
+                                                <color key="backgroundColor" red="0.80784313725490198" green="0.89803921568627454" blue="0.81568627450980391" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="FA">
+                                                    <fontDescription key="titleFontDescription" name="PartyLetPlain" family="Party LET" pointSize="50"/>
+                                                    <color key="baseForegroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rtV-7Z-bRr"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lhN-kD-rVr">
+                                                <rect key="frame" x="0.0" y="322" width="394" height="72.5"/>
+                                                <color key="backgroundColor" red="0.73725490196078436" green="0.80000000000000004" blue="0.60392156862745094" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="SO">
+                                                    <fontDescription key="titleFontDescription" name="PartyLetPlain" family="Party LET" pointSize="50"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gTv-z0-h3B"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mpe-nP-RjI">
+                                                <rect key="frame" x="0.0" y="402.5" width="394" height="72.5"/>
+                                                <color key="backgroundColor" red="0.85098039215686272" green="0.792156862745098" blue="0.70196078431372544" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="LA">
+                                                    <fontDescription key="titleFontDescription" name="PartyLetPlain" family="Party LET" pointSize="50"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yq8-ii-4zw"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I19-LH-7Ma">
+                                                <rect key="frame" x="0.0" y="483" width="394" height="72.5"/>
+                                                <color key="backgroundColor" red="0.37254901960784315" green="0.47843137254901957" blue="0.38039215686274508" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="TI">
+                                                    <fontDescription key="titleFontDescription" name="PartyLetPlain" family="Party LET" pointSize="50"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F3g-4O-hFD"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="TK9-f9-cYf" firstAttribute="leadingMargin" secondItem="Tte-F7-UV3" secondAttribute="leadingMargin" id="1IN-46-WGt"/>
+                                    <constraint firstItem="uXb-Kr-jy3" firstAttribute="top" secondItem="Tte-F7-UV3" secondAttribute="top" id="51X-pI-BGJ"/>
+                                    <constraint firstItem="uXb-Kr-jy3" firstAttribute="top" secondItem="Tte-F7-UV3" secondAttribute="top" id="BZl-vV-dhR"/>
+                                    <constraint firstItem="uXb-Kr-jy3" firstAttribute="leading" secondItem="Tte-F7-UV3" secondAttribute="leading" id="CdU-JP-7WD"/>
+                                    <constraint firstAttribute="bottom" secondItem="TK9-f9-cYf" secondAttribute="bottom" id="Lu7-rI-HHH"/>
+                                    <constraint firstAttribute="trailing" secondItem="uXb-Kr-jy3" secondAttribute="trailing" id="Pp4-mS-ovT"/>
+                                    <constraint firstAttribute="top" secondItem="uXb-Kr-jy3" secondAttribute="bottom" constant="-232" id="Svt-Gu-ULk"/>
+                                    <constraint firstAttribute="top" secondItem="uXb-Kr-jy3" secondAttribute="bottom" constant="-232" id="U5Z-P4-jnZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="uXb-Kr-jy3" secondAttribute="trailing" id="UBr-5a-UrH"/>
+                                    <constraint firstItem="uXb-Kr-jy3" firstAttribute="leading" secondItem="Tte-F7-UV3" secondAttribute="leading" id="Vmr-w3-tgO"/>
+                                    <constraint firstAttribute="trailing" secondItem="TK9-f9-cYf" secondAttribute="trailing" id="rGp-PV-8x6"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.1092313305" green="0.26231384279999997" blue="0.28235802049999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Tte-F7-UV3" secondAttribute="bottom" constant="42.5" id="U30-rr-tD1"/>
+                            <constraint firstAttribute="trailing" secondItem="Tte-F7-UV3" secondAttribute="trailing" constant="10" id="fOj-fq-R1O"/>
+                            <constraint firstItem="Tte-F7-UV3" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-20" id="rE5-09-zfP"/>
+                            <constraint firstItem="Tte-F7-UV3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="uK1-lN-H2S"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="93.75"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="imgonline-com-ua-resize-ja4JFvoC3r6Ara6" width="341" height="167"/>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

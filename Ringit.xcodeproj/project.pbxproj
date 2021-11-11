@@ -13,6 +13,7 @@
 		126E03D1273CBB9F00EE89BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 126E03CF273CBB9F00EE89BC /* Main.storyboard */; };
 		126E03D3273CBBA700EE89BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 126E03D2273CBBA700EE89BC /* Assets.xcassets */; };
 		126E03D6273CBBA700EE89BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 126E03D4273CBBA700EE89BC /* LaunchScreen.storyboard */; };
+		126E03DE273CC63900EE89BC /* Sounds in Resources */ = {isa = PBXBuildFile; fileRef = 126E03DD273CC63800EE89BC /* Sounds */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		126E03D2273CBBA700EE89BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		126E03D5273CBBA700EE89BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		126E03D7273CBBA700EE89BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		126E03DD273CC63800EE89BC /* Sounds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sounds; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				126E03D2273CBBA700EE89BC /* Assets.xcassets */,
 				126E03D4273CBBA700EE89BC /* LaunchScreen.storyboard */,
 				126E03D7273CBBA700EE89BC /* Info.plist */,
+				126E03DD273CC63800EE89BC /* Sounds */,
 			);
 			path = Ringit;
 			sourceTree = "<group>";
@@ -126,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				126E03D6273CBBA700EE89BC /* LaunchScreen.storyboard in Resources */,
+				126E03DE273CC63900EE89BC /* Sounds in Resources */,
 				126E03D3273CBBA700EE89BC /* Assets.xcassets in Resources */,
 				126E03D1273CBB9F00EE89BC /* Main.storyboard in Resources */,
 			);
